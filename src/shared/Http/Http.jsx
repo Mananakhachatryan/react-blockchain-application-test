@@ -9,7 +9,7 @@ const Http = {
     get: (url, currentState, custom, token) => {
         return new Promise((resolve, reject) => {
             //let host = environmentResolver.config().serverless;
-            let host = 'http://192.168.88.16:8080'
+            let host = 'http://localhost:8080'
             //'/events/upcoming/city?city=oslo&offset=1&limit=20'
             let postUrl = custom ? url : host + url;
             let headers = {
