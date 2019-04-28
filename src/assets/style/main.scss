@@ -1,0 +1,29 @@
+@import './constants.scss';
+@import './mixins.scss';
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css");
+
+html, #root, #main{height: 100%;}
+body {
+    margin: 0;
+    padding: 0;
+    color : $mainColor;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.pt-mono-font{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Mono', monospace;
+}
+.btn{
+    &.btn-info{
+        background-color: #2e8cda;
+        border-color: #2e8cda;
+    }
+}
+    

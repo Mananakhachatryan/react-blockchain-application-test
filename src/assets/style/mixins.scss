@@ -1,0 +1,30 @@
+@mixin icon($width, $height, $x, $y) {
+    background: url('../../assets/images/icons.svg') no-repeat;
+    background-size: 400px;
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+    display: inline-block;
+}
+  
+@mixin vertical-align($position: relative){
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative){
+    position: $position;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin all-align($position: relative){
+    position: $position;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

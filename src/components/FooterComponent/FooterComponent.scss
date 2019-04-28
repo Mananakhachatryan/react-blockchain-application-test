@@ -1,0 +1,59 @@
+@import '../../assets/style/constants.scss';
+
+.footer-content{
+    background: $white;
+    text-align: center;
+    padding: 0 40px;
+    height: 112px;
+    @media (max-width: 1200px){
+        text-align: left;
+    }
+    @media (max-width: 768px) { 
+        text-align: center;
+        height: auto;
+    }
+    @media (max-width: 576px) { 
+        padding: 0 0px;
+    }
+
+    .logo{
+        height: 100%;
+        width: 330px;
+        display: inline-block;
+        background-size: auto 95%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../assets/images/logo/Logo.png);
+        @media (max-width: 768px) { 
+            height: 75px;
+            margin: auto;
+            display: block;
+        }
+        @media (max-width: 576px) { 
+            height: 60px;
+        }
+    }
+    span{
+        float: right;
+        font-size: 24px;
+        color: $darkBlue;
+        line-height: 112px;
+        @media (max-width: 768px) { 
+            text-align: center;
+            float: none;
+            line-height: 50px;
+            font-size: 20px;
+        }
+    }
+}
+
+// @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

@@ -1,0 +1,109 @@
+@import '../../assets/style/constants.scss';
+
+.header-content{
+    height: 112px;
+    &.homepage-header{
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+    .logo{
+        float: left;
+        height: 100%;
+        width: 112px;
+        margin-left: 60px;
+        background-image: url(../../assets/images/logo/MiniLogo.png);
+        background-size: 100%;
+        background-position: center;
+        @media (max-width: 1200px) { 
+            margin-left: 30px;
+        }
+        @media (max-width: 768px) { 
+            margin-left: 15px;
+        }
+        @media (max-width: 576px) { 
+            margin-left: 0px;
+        }
+    }
+    i{
+        display: none;
+        @media (max-width: 576px) { 
+            display: block;
+            float: right;
+            line-height: 112px;
+            color: $darkPink;
+            font-size: 40px;
+            cursor: pointer;
+            &:hover{
+                color: $lightBlue;
+            }
+        }
+    }
+    ul{
+        height: 100%;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        @media (max-width: 576px) { 
+            display: none;
+            height: 0px;
+            position: absolute;
+            top: 113px;
+            left: 0px;
+            z-index: 10000;
+            //border-top: 2px solid #b4d2de;
+            background-color: $lightGrey; 
+            width: 100%;
+            &.open{
+                display: block;
+                
+            }
+        }
+        li{
+            height: 100%;
+            list-style: none;
+            float: left;
+            font-size: 22px;
+            padding: 0 60px;
+            @media (max-width: 1200px) { 
+                padding: 0 30px;
+            }
+            @media (max-width: 768px) { 
+                font-size: 18px;
+                padding: 0px 15px;
+            }
+            @media (max-width: 576px) { 
+                float: none;
+                width: 100%;
+                line-height: 40px;
+                background-color: $lightGrey; 
+                height: auto;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+
+                &.last{
+                    border-bottom: 2px solid #b4d2de;
+                }
+            }
+            a{
+                height: 100%;
+                line-height: 112px;
+                display: block;
+                color: $pink;
+                text-decoration: none;
+                @media (max-width: 576px) { 
+                    height: auto;
+                    line-height: 40px;
+                }
+                &:hover{
+                    color: $lightBlue;
+                }
+                &.active{
+                    color: $lightBlue;
+                }
+            }
+            
+        }
+    }
+}

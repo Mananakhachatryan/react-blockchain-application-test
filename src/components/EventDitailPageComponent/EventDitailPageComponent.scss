@@ -1,0 +1,111 @@
+@import '../../assets/style/constants.scss';
+
+.details-component-content{
+    padding: 54px 0px;
+    border-top: 1px solid $lightGreen;
+    background-color: $lightGrey;
+    
+    .back-btn{
+        background-image: url('../../assets/images/arrow-back.png');
+        background-position: center left;
+        background-repeat: no-repeat;
+        display: block;
+        width: 64px;
+        height: 37px;
+        margin-bottom: 54px; 
+    }
+    .region-banner{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../../assets/images/region/Banner.png');
+        width: 100%;
+        height: 245px;
+    }
+    .text-content{
+        background-color: $white;
+        border: 1px solid $lightBlue;
+        padding: 65px 140px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        @media (max-width: 992px) { 
+            padding: 10px 40px;
+        }
+        &.organizer-text-content{
+            margin-top: 30px;
+            h2{
+                font-size: 24px;
+                color: $darkBlue;
+                font-weight: 700;
+                margin: auto;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+            .organizer-img{
+                width: 200px;
+                height: 150px;
+                margin: auto;
+                background-color: $grey;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .organizer-name{
+                margin: 15px 0;
+            }
+        }
+        h1{
+            font-size: 30px;
+            color: $darkBlue;
+            font-weight: 700;
+            margin: auto;
+            width: 100%;
+            margin-bottom: 25px;
+            @media (max-width: 992px) { 
+                font-size: 25px;
+            }
+            @media (max-width: 576px) { 
+                font-size: 20px;
+            }
+        }
+        .time{
+            display: block;
+            color: $darkBlue;
+            font-size: 24px;
+            margin: auto;
+            width: 100%;
+        }
+        .location{
+            text-align: center;
+            color: $lightBlue;
+            width: 100%;
+            font-size: 18px;
+            margin: 50px 0 40px; 
+            i{
+                display: inline;
+                padding-right: 20px;
+            }
+            p{
+                display: inline;
+                font-size: 18px;
+                font-weight: normal;
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 300;
+            color: $darkBlue; 
+            margin: auto;
+            text-align: center;
+            a{
+                color: $lightBlue;
+                font-size: 16px;
+                font-weight: 300;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+        .attend{
+            display: block;
+            margin: 20px auto;
+        }
+    }
+    
+}
