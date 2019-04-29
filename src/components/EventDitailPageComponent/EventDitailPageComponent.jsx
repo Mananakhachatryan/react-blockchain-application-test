@@ -21,14 +21,14 @@ class EventDitailPageComponent extends Component {
                 <p className='time'>{moment(this.props.eventDetailData.time).format('MMMM DD, YYYY - h:mm a')}</p>
                 <div className='location'>
                   <i className="fas fa-map-marker-alt"></i>
-                  <p>Bitcoin Center, {this.props.eventDetailData.city} , {this.props.eventDetailData.country} </p>
+                  <p>Bitcoin Center, {this.props.eventDetailData.city}, {this.props.eventDetailData.country ? this.props.eventDetailData.country.toUpperCase() : ''} </p>
                 </div>
-                <p className>Welcome to the meetup for blockchain couples! This event is hosteed by {this.props.eventDetailData.groups[0].name}</p>
+                <p className>Welcome to the meetup for blockchain couples! {(this.props.eventDetailData.groups && this.props.eventDetailData.groups[0]) && <span>This event is hosted by {this.props.eventDetailData.groups[0].name} </span>}</p>
                 <p dangerouslySetInnerHTML={{ __html: this.props.eventDetailData.description }}/> 
                 <a href={this.props.eventDetailData.url} target="_blank" className='btn btn-info attend'>Attend</a>
               </div>
             </div>
-            {this.props.eventDetailData.groups && this.props.eventDetailData.groups[0] &&
+            {(this.props.eventDetailData.groups && this.props.eventDetailData.groups[0]) &&
               <div className="organizer-text-content text-content">
                 <div className='row'>
                   <div className='col-sm-12'>
